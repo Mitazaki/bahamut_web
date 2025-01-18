@@ -1,4 +1,8 @@
+![DjBahamut](https://www.numbtongue.cc/images/bahamut_logo_splash1.png)
+
 # DjBahamut
+
+<p style="color: red;">⚠️ This project is still under development and not yet complete. Use at your own risk. ⚠️</p>
 
 DjBahamut is a Django project that integrates Discord OAuth2 for user authentication. This is meant as a base for development of a website that can admin a discord bot using those credentials and using discord oath as your authentication platform.
 
