@@ -1,4 +1,4 @@
-![DjBahamut](https://www.numbtongue.cc/images/bahamut_logo_splash1.png)
+![DjBahamut](bahamut_logo_splash1.png)
 
 # DjBahamut
 
