@@ -22,6 +22,29 @@ DjBahamut is a Django project that integrates Discord OAuth2 for user authentica
 ```sh
 git clone https://github.com/yourusername/djbahamut.git
 cd djbahamut
+```
 
+### 6. Run Migrations
 
+Apply the migrations to set up your database schema.
 
+### 7. Run the Development Server
+
+Start the Django development server.
+
+```sh
+python3 manage.py runserver
+```
+
+### 8. Access the Application
+
+Open your web browser and navigate to http://127.0.0.1:8000.
+
+### Usage
+Navigate to /login/ to authenticate via Discord.
+After successful authentication, you will be redirected to the home page.
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
+
+### License
+This project is licensed under the MIT License.
