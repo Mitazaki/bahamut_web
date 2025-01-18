@@ -1,6 +1,6 @@
 # DjBahamut
 
-DjBahamut is a Django project that integrates Discord OAuth2 for user authentication.
+DjBahamut is a Django project that integrates Discord OAuth2 for user authentication. This is meant as a base for development of a website that can admin a discord bot using those credentials and using discord oath as your authentication platform.
 
 ## Features
 
