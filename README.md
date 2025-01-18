@@ -15,6 +15,20 @@ DjBahamut is a Django project that integrates Discord OAuth2 for user authentica
 - MySQL
 - `pipenv` for managing dependencies
 
+## Skills Demonstrated
+
+- **Web Development**: Building a full-stack web application using Django.
+- **Authentication**: Implementing OAuth2 authentication with Discord.
+- **Database Management**: Integrating and managing a MySQL database.
+- **Environment Management**: Using `.env` files for environment variable management.
+- **Version Control**: Using Git for version control and collaboration.
+- **Dependency Management**: Managing project dependencies with `pipenv`.
+- **API Integration**: Working with external APIs (Discord API).
+- **Problem Solving**: Debugging and solving issues that arise during development.
+- **Team Collaboration**: Contributing to a project in a collaborative environment.
+- **Linux Proficiency**: Navigating and managing a Linux-based server environment.
+- **Django Framework**: Utilizing Django's features for rapid development and clean design.
+
 ## Setup
 
 ### 1. Clone the Repository
