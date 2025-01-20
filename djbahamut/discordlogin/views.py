@@ -38,7 +38,7 @@ def discord_login_redirect(request: HttpRequest):
     discord_user = list(discord_user).pop()
     print(f'discord userset {discord_user}')
     login(request, discord_user)
-    return redirect('/auth/user')
+    return redirect('/dashboard')
 
 def exchange_code(code: str) -> dict:
     data = {

@@ -14,14 +14,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+# filepath: /home/dl/web/djbahamut/djbahamut/urls.py
 from django.contrib import admin
-from django.urls import path
-from discordlogin import views
+from django.urls import path, include
+from discordlogin import views as discord_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('auth/user', views.get_authenticated_user, name='get_authenticated_user'),
-    path('oauth2', views.home, name='oauth2'),
-    path('oauth2/login', views.discord_login, name='oauth2_login'),
-    path('login/redirect', views.discord_login_redirect, name='discord_login_redirect'),
+    path('auth/user/', discord_views.get_authenticated_user, name='get_authenticated_user'),
+    path('oauth2/', discord_views.home, name='oauth2'),
+    path('oauth2/login/', discord_views.discord_login, name='oauth2_login'),
+    path('login/redirect/', discord_views.discord_login_redirect, name='discord_login_redirect'),
+    path('', include('dashboard.urls')),  # Include the dashboard URLs
 ]
