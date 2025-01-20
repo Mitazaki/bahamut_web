@@ -1,5 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse, HttpRequest, JsonResponse
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 import requests
 import os
 from dotenv import load_dotenv
@@ -10,6 +12,21 @@ load_dotenv()
 def home(request: HttpRequest) -> JsonResponse:
     return JsonResponse({'message': 'Hello, World!'})
 
+@login_required(login_url='/oauth2/login')
+def get_authenticated_user(request: HttpRequest):
+    user = request.user
+    return JsonResponse({
+        "id": user.discord_id,
+        "username": user.username,
+        "avatar": user.avatar,
+        "email": user.email,
+        "mfa_enabled": user.mfa_enabled,
+        "locale": user.locale,
+        "flags": user.flags,
+        "public_flags": user.public_flags,
+        "last_login": user.last_login
+    })
+
 def discord_login(request: HttpRequest):
     return redirect(os.getenv('DISCORD_LOGIN_URL'))
 
@@ -17,7 +34,11 @@ def discord_login_redirect(request: HttpRequest):
     code = request.GET.get('code')
     print(code)
     user = exchange_code(code)
-    return JsonResponse({'user': user})
+    discord_user = authenticate(request, user=user)
+    discord_user = list(discord_user).pop()
+    print(f'discord userset {discord_user}')
+    login(request, discord_user)
+    return redirect('/auth/user')
 
 def exchange_code(code: str) -> dict:
     data = {
