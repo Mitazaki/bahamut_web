@@ -2,9 +2,11 @@
 
 # DjBahamut
 
-<p style="color: red;">⚠️ This project is still under development and not yet complete. Use at your own risk. ⚠️</p>
-
 DjBahamut is a Django project that integrates Discord OAuth2 for user authentication. This is meant as a base for development of a website that can admin a discord bot using those credentials and using discord oath as your authentication platform.
+
+This project has Django apps, one for managing the discord login and another for the home page and dashboard pages.
+
+With this app you have a base for building a dashboard for your bot using both your own mysql bot data and the discord login for authentication.
 
 ## Features
 
