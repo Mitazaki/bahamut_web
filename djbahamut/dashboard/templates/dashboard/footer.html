@@ -1,0 +1,29 @@
+<!-- filepath: /home/dl/web/djbahamut/dashboard/templates/dashboard/footer.html -->
+{% load static %}
+</div><!-- END CONTENT -->
+</div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="{% static 'dashboard/js/scripts.js' %}"></script>
+<script>
+window.addEventListener("DOMContentLoaded", function(){
+  document.getElementById("mainwrapper1").style.display = "block";
+});
+</script>
+<script>
+  $(document).ready(function() {
+    $("[href]").each(function() {
+      if (this.href == window.location.href) {
+        $(this).addClass("active");
+      }
+    });
+  });
+
+</script>
+<script>
+$(window).on('load', function() {
+ $("body").show();
+});
+</script> 

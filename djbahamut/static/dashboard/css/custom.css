@@ -1,0 +1,228 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html {}
+body {
+    background: radial-gradient(circle at 60.16% 26.15%, #00211f, transparent 51%), radial-gradient(circle at 39.69% 25.57%, #331903, transparent 56%), radial-gradient(circle at 50% 50%, #030303, #030303 100%);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:none; 
+    cursor: default;
+}
+.maincontainer {
+    padding-top: 100px;
+}
+.vertical-center {
+    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+    .guild-icon-container {
+        width: 60px;
+        height: 60px;
+        padding: 4px;
+      
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(8px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .guild-icon {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+.custom-toggler.navbar-toggler {}
+.glasscard {
+    backdrop-filter: blur(1rem);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    border-top-color: rgba(150, 150, 150, 0.1);
+    border-left-color: rgba(150, 150, 150, 0.1);
+    border-bottom-color: rgba(150, 150, 150, 0.1);
+    border-right-color: rgba(150, 150, 150, 0.1);
+}
+.glasscard-orange1 {
+    backdrop-filter: blur(1rem);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-width: 1px 1px 1px 4px;
+    border-color: rgba(155,121,64,0.1) rgba(155,121,64,0.1) rgba(155,121,64,0.1) rgba(155,121,64,0.7);
+}
+.glasscard-blue1 {
+    backdrop-filter: blur(1rem);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-width: 1px 1px 1px 4px;
+    border-color: rgba(19,84,216,0.10) rgba(19,84,216,0.10) rgba(19,84,216,0.10) rgba(19,84,216,0.7);
+}
+.glasscard-red1 {
+    backdrop-filter: blur(1rem);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-width: 1px 1px 1px 4px;
+    border-color: rgba(216,18,18,0.10) rgba(216,18,18,0.10) rgba(216,18,18,0.10) rgba(216,18,18,0.7);
+}
+.glasscard-login {
+    backdrop-filter: blur(1rem);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    border-top-color: rgba(150, 150, 150, 0.1);
+    border-left-color: rgba(150, 150, 150, 0.1);
+    border-bottom-color: rgba(150, 150, 150, 0.1);
+    border-right-color: rgba(150, 150, 150, 0.1);
+}
+.navbar {
+    background-image: url("../images/navbg.png");
+}
+.druids-logo-text {
+    background: #78FFFF;
+    background: linear-gradient(to bottom, #78FFFF 0%, #78FFFF 51%, #48CDFF 64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.login-image {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("../images/bahamut_logo_splash1.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-span {
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+}
+.table {
+	border-radius: 0.5rem ;
+	box-shadow: var(--crash-box-shadow);
+}
+.table td {
+ 
+}
+.search:focus {
+  outline: none !important;
+  box-shadow: none  !important;
+}
+.search {
+	
+  outline: none !important;
+  box-shadow: none  !important;
+}
+#clanDump th {
+	font-size: 13px;
+	color: var(--color-text2);
+	background: var(--color-bghead);
+	vertical-align: middle;
+}
+#clanDump td {
+	color: var(--color-text3);
+	vertical-align: middle;
+}
+.mytableleft {
+	border-radius: 5px 0 0 0px !important;
+
+	border-width: 0px 0 2px 0 !important;
+	border-left-width: 0px;
+	border-bottom-color: var(--color-line1) !important;
+}
+.mytableright {
+	border-radius: 0 5px 0px 0 !important;
+	border-width: 0px 0 2px 0 !important;
+	border-right-width: 0px;
+	border-bottom-color: var(--color-line1) !important;
+}
+.mytablemid {
+	border-width: 0px 0 2px 0 !important;
+	border-bottom-color: var(--color-line1) !important;
+}
+.mytablerow {
+
+}
+.mytablerow button {
+	background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: default;
+    overflow: hidden;
+    outline: none;
+}
+.mytablerow button span {
+	font-size: 20px;
+}
+/* REQUIRED in CUSTOM THEMES!
+ This is the only definition that MUST BE added to any custom themes.
+ This is how rows are hidden by filtering (included in provided themes) */
+.tablesorter .filtered {
+  display: none;
+}
+
+/* All of the following css is already contained within each theme file; modify it as desired */
+/* filter row */
+.tablesorter-filter-row td {
+  background: #eee;
+  line-height: normal;
+  text-align: center; /* center the input */
+  -webkit-transition: line-height 0.1s ease;
+  -moz-transition: line-height 0.1s ease;
+  -o-transition: line-height 0.1s ease;
+  transition: line-height 0.1s ease;
+}
+/* optional disabled input styling */
+.tablesorter-filter-row .disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default;
+}
+
+/* hidden filter row */
+.tablesorter-filter-row.hideme td {
+  /*** *********************************************** ***/
+  /*** change this padding to modify the thickness     ***/
+  /*** of the closed filter row (height = padding x 2) ***/
+  padding: 2px;
+  /*** *********************************************** ***/
+  margin: 0;
+  line-height: 0;
+  cursor: default;
+}
+.tablesorter-filter-row.hideme * {
+  height: 1px;
+  min-height: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  /* don't use visibility: hidden because it disables tabbing */
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* filters */
+.tablesorter-filter {
+  width: 95%;
+  height: inherit;
+  margin: 4px;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  color: #333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: height 0.1s ease;
+  -moz-transition: height 0.1s ease;
+  -o-transition: height 0.1s ease;
+  transition: height 0.1s ease;
+}
+.hidden {
+	display: none;
+}

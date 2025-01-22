@@ -1,13 +1,34 @@
 <!-- filepath: /home/dl/web/djbahamut/dashboard/templates/dashboard/login.html -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login with Discord</title>
-</head>
-<body>
-    <h1>Login with Discord</h1>
-    <a href="{% url 'oauth2_login' %}">
-        <button>Login with Discord</button>
-    </a>
-</body>
-</html>
+{% load static %}
+{% include 'dashboard/header.html' %}
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card glasscard-login bg-opacity-50 bg-dark1" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-5 d-none d-md-block img-fluid">
+                            <div class="login-image h-100 w-100 opacity-75" style="border-radius: 1rem 0rem 0rem 1rem;"></div>
+                        </div>
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+                                <form>
+                                    <div class="d-flex align-items-center mb-3 pb-1"> <img src="{% static 'dashboard/images/bahamutlogo1.png' %}" width="50" class="me-4 rounded-circle">
+                                        <div style="line-height: 0px;"> <span class="h1 mb-0 text-txt-light2 pt-1 druids-logo-text text-nowrap" style="font-family: 'Bebas Neue', cursive;">Bahamut Bot</span><br>
+                                            <span class="small text-muted" style="font-family: 'Bebas Neue', cursive;">Web management panel</span> </div>
+                                    </div>
+                                    <h5 class="fw-normal mb-3 pb-3 text-txt-light3" style="letter-spacing: 1px;">Sign in with your discord account</h5>
+                                    <div class="pt-1 mb-4"> <a href="{% url 'oauth2_login' %}" class="btn btn-primary" style="width:100%"><i class="bi-discord"></i> Login</a> </div>
+                                    <p class="mb-5 pb-lg-2 text-druid-orange1">Check out our Discord for all Bahamut updates <a href="https://discord.gg/PxmPZWcZJs" class="text-druid-orange1">Join here</a></p>
+                                    <span class="small text-muted">This website uses a cookie to remember your login information.<br>
+                                    No third party or tracking cookies are used. By signing into this website you agree to let us set this essential cookie.</span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'dashboard/footer.html' %}
